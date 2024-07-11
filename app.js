@@ -14,7 +14,7 @@ function seleccionarOpciones(precioBase) {
 
   while (agregarMas) {
     let opcion = confirm(
-      `Te interesaria agregar alguno de nuestros servicios adicionaleslaureano?\n\nPrecio total actual: $${precioTotal}`
+      `Te interesaria agregar alguno de nuestros servicios adicionales ?\n\nPrecio total actual: $${precioTotal}`
     );
 
     if (opcion) {
