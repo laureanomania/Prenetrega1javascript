@@ -4,7 +4,7 @@ function solicitarNombre() {
 
 function mostrarPrecioBase() {
   const precioBase = 7000;
-  alert(`El Valor de nuestro servicio es : $${precioBase}`);
+  alert(`El Valor de nuestro trabajo es : $${precioBase}`);
   return precioBase;
 }
 
@@ -14,12 +14,12 @@ function seleccionarOpciones(precioBase) {
 
   while (agregarMas) {
     let opcion = confirm(
-      `Te interesaria agregar alguno de nuestros servicios adicionales ?\n\nPrecio total actual: $${precioTotal}`
+      `Te interesaria agregar alguno de nuestros Servicios adicionales ?\n\nPrecio total actual: $${precioTotal}`
     );
 
     if (opcion) {
       let opcionElegida = prompt(
-        `Por favor elige uno de nuestros Servicios adicionales:\n\n1. Barba (+$1000)\n2. Cejas (+$650)\n3. Teñido (+$2000)\n4. Lavado (+$600)\n\nPara finalizar, escribe "fin".`
+        `Por favor elige uno de nuestros Servicios adicionales:\n\n1. Barba (+$1000)\n2. Cejas (+$650)\n3. Teñido (+$2000)\n4. Lavado (+$600)`
       );
 
       switch (opcionElegida) {
@@ -38,9 +38,6 @@ function seleccionarOpciones(precioBase) {
         case "4":
           precioTotal += 600;
           alert("Has agregado Lavado (+$600).");
-          break;
-        case "fin":
-          agregarMas = false;
           break;
         default:
           alert("Opción no válida. Por favor, elige una opción válida.");
